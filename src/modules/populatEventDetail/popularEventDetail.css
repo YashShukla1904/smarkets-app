@@ -1,0 +1,28 @@
+.popular-event-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+}
+
+.popular-event-detail-container .row {
+    display: flex;
+    gap: 15px
+}
+
+.popular-event-detail-container > *, .popular-event-detail-container .row > * {
+    margin: 0;
+}
+
+.popular-event-detail-container .row > p {
+    display: flex;
+    gap: 15px;
+}
+
+.popular-event-detail-container .row > p span:first-child {
+    color: #00B073;
+}
+
+.popular-event-detail-container .row > p span:first-child::after {
+    content: ':';
+}
