@@ -8,8 +8,6 @@ import Icon from '../icon/Icon'
 import './PopularEventCard.css'
 import { setEventDetailAction } from '../../redux/actionCreators';
 
-
-
 function PopularEventCard(props) {
     const dispatch = useDispatch()
     const { eventId } = props

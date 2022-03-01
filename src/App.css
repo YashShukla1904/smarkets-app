@@ -1,5 +1,10 @@
 body, html {
     background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
 }
 
 .main-container-header {
@@ -29,14 +34,21 @@ body, html {
     background-color: #1A1A1A;
     color: #fff;
     padding: 15px 0;
-    min-width: 200px;
+    width: 250px;
+    max-width: 250px;
 }
 
 .main-container-body {
     position: fixed;
     top: 50px;
-    left: 200px;
+    left: 250px;
     right: 0;
     bottom: 0;
     padding: 15px;
+}
+
+.module-heading {
+    color: #00B073;
+    margin: 0;
+    margin-bottom: 15px;
 }

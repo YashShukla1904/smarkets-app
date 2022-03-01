@@ -1,8 +1,9 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
+import { Provider } from 'react-redux';
+
 import PopularEventsList from './modules/popularEventsList/PopularEventsList'
 import PopularEventDetail from './modules/populatEventDetail/popularEventDetail'
-import { Provider } from 'react-redux';
 
 import './App.css'
 import Layout from './Layout';
