@@ -9,4 +9,4 @@ const eventDetailReducer = function (state = null, action) {
     }
 };
 
-export default eventDetailReducer 
+export { eventDetailReducer } 

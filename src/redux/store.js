@@ -1,5 +1,5 @@
 import { combineReducers, createStore } from "redux";
-import eventDetailReducer from "./reducers";
+import { eventDetailReducer } from "./reducers";
 
 const reducers = combineReducers({
     eventDetail: eventDetailReducer

@@ -6,7 +6,8 @@ import { getPopularEventDetails } from '../../api';
 
 function PopularEventDetail() {
     const eventDetailInStore = useSelector(state => state.eventDetail)
-    const [detail, setDetail] = useState(null)
+
+    const [eventDetail, setDetail] = useState(null)
     const [loading, setLoading] = useState(false)
 
     const params = useParams()
@@ -28,8 +29,8 @@ function PopularEventDetail() {
         }
     }, [eventDetailInStore, params.eventId])
 
-    if (detail) {
-        const { name, start_date, short_name } = detail
+    if (eventDetail) {
+        const { name, start_date, short_name } = eventDetail
 
         return <div className='popular-event-detail-container'>
             <h3>{name}</h3>

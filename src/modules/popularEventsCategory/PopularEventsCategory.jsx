@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import EventCategoryListItem from '../../components/eventCategoryListItem/EventCategoryListItem'
 
@@ -8,12 +8,6 @@ import './PopularEventsCategory.css'
 function PopularEventsCategory() {
     const params = useParams()
     const selectedPopularEventCategory = params.categoryName
-
-    const navigate = useNavigate()
-
-    function eventCategoryClickHandler(urlPath) {
-        navigate(`/category/${urlPath}`)
-    }
 
     const sports = [{
         name: 'Baseball',
@@ -42,7 +36,7 @@ function PopularEventsCategory() {
     }]
 
     return (
-        <div>
+        <>
             <h5 className='module-heading popular-events-category-heading'>CATEGORIES</h5>
             <nav>
                 <ul className='popular-events-category-list' aria-label="Categories">
@@ -54,7 +48,7 @@ function PopularEventsCategory() {
                         selected={selectedPopularEventCategory && sport.urlPath === selectedPopularEventCategory} />)}
                 </ul>
             </nav>
-        </div>
+        </>
     )
 }
 

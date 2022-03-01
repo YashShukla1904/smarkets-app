@@ -8,3 +8,8 @@
 .popular-event-card h4 {
     margin: 0;
 }
+
+.popular-event-card:hover {
+    background-color: #202020;
+    transition: all 0.3s;
+}

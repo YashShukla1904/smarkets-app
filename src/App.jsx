@@ -17,6 +17,7 @@ function App() {
                 <Route path="/" element={<Layout />}>
                     <Route path="category/:categoryName" element={<PopularEventsList />} />
                     <Route path="event/:eventId/category/:categoryName" element={<PopularEventDetail />} />
+                    <Route path="*" element={<p>Page not found</p>} />
                 </Route>
             </Routes>
         </Provider>
