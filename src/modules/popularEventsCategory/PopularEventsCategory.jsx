@@ -31,7 +31,7 @@ function PopularEventsCategory() {
     },
     {
         name: 'Ice Hockey',
-        icon: 'faBasketball',
+        icon: 'faHockeyPuck',
         urlPath: 'ice-hockey'
     }]
 
