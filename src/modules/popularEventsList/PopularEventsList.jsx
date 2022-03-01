@@ -35,9 +35,9 @@ function PopularEventsList() {
             return (
                 <>
                 <h5 className='module-heading'>POPULAR EVENTS</h5>
-                    <div className='popular-event-list-container'>
+                    <ul className='popular-event-list-container'>
                         {eventIds.map(eventId => <PopularEventCard eventId={eventId} key={eventId} />)}
-                    </div>
+                    </ul>
                 </>)
         } else {
             return <div className='popular-event-list-container'>

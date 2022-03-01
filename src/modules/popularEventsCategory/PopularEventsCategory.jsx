@@ -44,14 +44,16 @@ function PopularEventsCategory() {
     return (
         <div>
             <h5 className='module-heading popular-events-category-heading'>CATEGORIES</h5>
-            <ul className='popular-events-category-list'>
-                {sports.map(sport => <EventCategoryListItem
-                    onCategoryClick={() => eventCategoryClickHandler(sport.urlPath)}
-                    name={sport.name}
-                    icon={sport.icon}
-                    key={sport.name}
-                    selected={selectedPopularEventCategory && sport.urlPath === selectedPopularEventCategory} />)}
-            </ul>
+            <nav>
+                <ul className='popular-events-category-list' aria-label="Categories">
+                    {sports.map(sport => <EventCategoryListItem
+                        name={sport.name}
+                        icon={sport.icon}
+                        key={sport.name}
+                        urlPath={sport.urlPath}
+                        selected={selectedPopularEventCategory && sport.urlPath === selectedPopularEventCategory} />)}
+                </ul>
+            </nav>
         </div>
     )
 }

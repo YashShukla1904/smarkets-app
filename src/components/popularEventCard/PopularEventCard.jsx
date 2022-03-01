@@ -46,9 +46,9 @@ function PopularEventCard(props) {
         const { name } = eventData
 
         return (
-            <div className='popular-event-card' onClick={eventClickHandler}>
+            <li className='popular-event-card' onClick={eventClickHandler}>
                 <h4>{name}</h4>
-            </div>
+            </li>
         )
     }
 
